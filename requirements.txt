@@ -1,0 +1,10 @@
+# Standalone fdk — only what the runtime imports (see fdk_requirements.txt for fdk's own list).
+# Pins match the Candor backend's. Tests additionally need pytest and pytest-timeout.
+fastapi==0.115.0
+uvicorn[standard]==0.30.6
+pydantic==2.9.2
+python-dotenv==1.0.1
+requests==2.32.3
+psycopg2-binary>=2.9.9
+tzdata>=2024.1            # zoneinfo's Asia/Kolkata on hosts without a system tz database (Windows)
+-r fdk_requirements.txt
